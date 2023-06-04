@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Movie Tickets</title>
+</head>
+
+<body>
+    <!-- login -->
+    <div id="login-container" class="container">
+        <form>
+            <div>
+                <h1>Login Page</h1>
+                <div>
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" placeholder="Enter User Name" />
+                </div>
+                <div>
+                    <label for="password"> Password: </label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" />
+                </div>
+                <button id="login" type="button">Login</button>
+            </div>
+        </form>
+    </div>
+    <!-- order -->
+    <div id="ticket-container" class="container">
+        <div>
+            <div id="name">Hello, please select your ticket order 1-4 seatsss</div>
+            <div id="clock" class="timer">15:00</div>
+            <div id="movie-seat" class="d-flex flex-wrap"></div>
+            <button id="place-order" type="button">Place Order</button>
+        </div>
+    </div>
+    <!-- valid -->
+    <div id="valid-container" class="container">
+        <div id="order-name">Your order has been placed.</div>
+    </div>
+    <!-- invalidssss -->
+    <div id="invalid-container" class="container">
+        <div id="failed-name">
+            Something went wrong. Your time has expired or you tried to order 0 or more than 4 tickets. Hope to see you
+            again.
+        </div>
+        <button id="go-back" type="button">Order Again</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
